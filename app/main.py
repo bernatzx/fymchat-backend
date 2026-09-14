@@ -25,4 +25,7 @@ app.include_router(paraphrase.router)
 
 @app.get("/")
 def root():
-    return {"message": "FymChat API is running"}
+    return {
+        "message": "FymChat API is running",
+        "version": "1.0",
+    }
